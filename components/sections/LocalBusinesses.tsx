@@ -3,6 +3,7 @@ import { LOCAL_BUSINESSES, LOCAL_BUSINESSES_SECTION } from "@/constants";
 import { Container } from "../ui/Container";
 import { LocalBusinessesBrowser } from "../ui/LocalBusinessesBrowser";
 import { Reveal } from "../ui/Reveal";
+import { LocalSeoSitemap } from "./LocalSeoSitemap";
 
 export function LocalBusinesses() {
   return (
@@ -25,7 +26,10 @@ export function LocalBusinesses() {
         </Reveal>
 
         <LocalBusinessesBrowser businesses={LOCAL_BUSINESSES} />
+        
+        <LocalSeoSitemap />
       </Container>
     </section>
   );
 }
+

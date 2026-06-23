@@ -12561,3 +12561,79 @@ footer {
   margin-top: clamp(36px, 4vw, 56px);
 }
 
+/* ── LocalSeoSitemap — Expandable SEO directory at the bottom ─────────────── */
+.seo-directory {
+  margin-top: 48px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface-2);
+  overflow: hidden;
+  transition: all 0.3s var(--ease);
+}
+
+.seo-directory__trigger {
+  padding: 18px 24px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.seo-directory__trigger:hover {
+  color: var(--color-accent);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.seo-directory__content {
+  padding: 28px 24px 32px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-background-secondary);
+}
+
+.seo-directory__sub {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  max-width: 80ch;
+}
+
+.seo-directory__section-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 28px 0 16px;
+  border-bottom: 1px dashed var(--color-border);
+  padding-bottom: 8px;
+}
+
+.seo-directory__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.seo-directory__item {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--color-text-secondary);
+  transition: color 0.2s var(--ease);
+}
+
+.seo-directory__item-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+
+.seo-directory__item-link:hover {
+  color: var(--color-accent);
+}
+
+
