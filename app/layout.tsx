@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     default: SITE.title,
     template: "%s · Sarte Global",
   },
+  verification: {
+    google: "srazwgqatbPlPrHU7WocKJt59_qO8E47HWleqFb3qFU",
+  },
   description: SITE.description,
   applicationName: SITE_NAME,
   authors: [{ name: SITE_NAME, url: SITE_URL }],
